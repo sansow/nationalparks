@@ -5,7 +5,7 @@ pool:
   name: mgb
 
 variables:
-  project-name-dev: 'ado-openshift'
+  project-name-dev: 'nationalparks'
   image-name: 'nationalparks'
 
 stages:
@@ -20,7 +20,7 @@ stages:
       inputs:
         command: 'build'
         containerRegistry: 'openshift-registry'
-        buildContext: 'App'
+        buildContext: '.'
         repository: '$(project-name-dev)/$(image-name)'
         Dockerfile: 'Dockerfile'
         tags: $(Build.BuildId)
