@@ -29,7 +29,7 @@ stages:
       inputs:
         command: 'push'
         containerRegistry: 'quay'
-        repository: '$(project-name-dev)/$(image-name)'
+        repository: 'sabhaska/$(image-name)'
         tags: $(Build.BuildId)
     - task: PublishPipelineArtifact@1
       displayName: Publish pipeline artifacts
