@@ -7,6 +7,7 @@ pool:
 variables:
   project-name-dev: 'nationalparks'
   image-name: 'nationalparks'
+  repository: 'sabhaska'
 
 stages:
 - stage: Build
@@ -29,7 +30,7 @@ stages:
       inputs:
         command: 'push'
         containerRegistry: 'quay'
-        repository: 'sabhaska/$(image-name)'
+        repository: '$(repository)/$(image-name)'
         tags: $(Build.BuildId)
     - task: PublishPipelineArtifact@1
       displayName: Publish pipeline artifacts
