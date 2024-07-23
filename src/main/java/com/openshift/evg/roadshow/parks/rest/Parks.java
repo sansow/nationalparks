@@ -26,7 +26,7 @@ public class Parks {
     @CrossOrigin
     @RequestMapping(method = RequestMethod.GET, value = "/load", produces = "application/json")
     public String load() {
-        System.out.println("[INFO] load()");
+        System.out.println("[INFO] load() ");
         List<Document> l = con.loadParks();
         con.init(l);
         return "Items inserted in database: " + con.sizeInDB();
@@ -35,7 +35,7 @@ public class Parks {
     @CrossOrigin
     @RequestMapping(method = RequestMethod.GET, value = "/all", produces = "application/json")
     public List<Park> getAllParks() {
-        System.out.println("[DEBUG] getAllParks again");
+        System.out.println("[DEBUG] getAllParks ");
 
         return con.getAll();
     }
