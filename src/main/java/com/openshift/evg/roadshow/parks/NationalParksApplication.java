@@ -12,6 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  * Created by jmorales on 24/08/16.
  */
+//Comments added
 @SpringBootApplication
 @ComponentScan(basePackages = "com.openshift.evg.roadshow.parks.rest,com.openshift.evg.roadshow.parks.db")
 @EnableAutoConfiguration(exclude={ MongoDataAutoConfiguration.class, MongoAutoConfiguration.class})
