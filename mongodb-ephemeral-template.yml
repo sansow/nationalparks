@@ -146,7 +146,7 @@ objects:
                 - mountPath: /var/lib/mongodb/data
                   name: '${DATABASE_SERVICE_NAME}-data'
               capabilities: {}
-              image: 'quay.io/centos7/mongodb-36-centos7:latest'
+              image: 'quay.io/centos7/mongodb-36-centos7:master'
           dnsPolicy: ClusterFirst
           restartPolicy: Always
           volumes:
