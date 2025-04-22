@@ -1,0 +1,6 @@
+oc process mongodb-ephemeral -n nationalparks\
+  -p DATABASE_SERVICE_NAME=mongodb-nationalparks \
+  -p MONGODB_USER=mongodb \
+  -p MONGODB_PASSWORD=mongodb \
+  -p MONGODB_DATABASE=mongodb \
+  -p MONGODB_ADMIN_PASSWORD=mongodb | oc apply -f -
