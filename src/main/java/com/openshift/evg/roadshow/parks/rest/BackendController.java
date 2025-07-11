@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RequestMapping("/ws/info")
 @RestController
-@CrossOrigin
 public class BackendController{
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
