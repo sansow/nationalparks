@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * Created by jmorales on 26/09/16.
  */
-@RequestMapping("/ws/info")
+@RequestMapping("/ws/info/")
 @RestController
 public class BackendController{
 
