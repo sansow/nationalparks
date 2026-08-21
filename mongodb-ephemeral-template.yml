@@ -73,7 +73,7 @@ objects:
     status:
       loadBalancer: {}
   - apiVersion: v1
-    kind: DeploymentConfig
+    kind: Deployment
     metadata:
       annotations:
         template.alpha.openshift.io/wait-for-ready: 'true'
