@@ -81,7 +81,7 @@
         annotations:
           template.alpha.openshift.io/wait-for-ready: 'true'
         labels:
-          app.kubernetes.io/name: mongodb
+          app.kubernetes.io/name: mongodb-nationalparks
           app.kubernetes.io/part-of: workshop
       spec:
         replicas: 1
